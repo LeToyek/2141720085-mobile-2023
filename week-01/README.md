@@ -7,7 +7,7 @@
 - **Kelas:** TI-3H
 - **No Absen:** 16
 
-## Screenshot
+## Screenshots
 
 ### Code
 ![Screenshot](./docs/hello_world.png)
