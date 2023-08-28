@@ -9,5 +9,9 @@
 
 ## Screenshot
 
+### Code
 ![Screenshot](./docs/hello_world.png)
+
+### Hasil
+![Screenshot](./docs/hasil.png)
 
