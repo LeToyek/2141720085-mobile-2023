@@ -32,22 +32,12 @@ Rangkumlah materi dari codelab ini menjadi poin-poin penting yang dapat Anda gun
 
 ### Jawaban
 
-1. **Dart adalah Bahasa Utama Flutter:**
-   - Flutter menggunakan Dart sebagai bahasa pemrograman utama untuk mengembangkan aplikasi.
-   - Memahami Dart adalah kunci untuk menjadi seorang pengembang Flutter yang kompeten.
+Dart adalah bahasa pemrograman yang bertujuan untuk menggabungkan kelebihan-kelebihan dari sebagian besar bahasa tingkat tinggi dengan fitur-fitur bahasa pemrograman terkini. Beberapa fitur utama Dart mencakup:
 
-2. **Penggunaan Dart dalam UI dan Logika:**
-   - Dart digunakan untuk mengelola logika aplikasi dan membangun antarmuka pengguna (UI) dalam Flutter.
-   - Pengembang perlu menguasai Dart untuk mengatur tampilan dan berinteraksi dengan data dalam Flutter.
+- **Productive Tooling:** Dart menyediakan kakas (tool) produktif seperti analisis kode, plugin IDE, dan ekosistem paket yang besar.
+- **Garbage Collection:** Dart memiliki pengelolaan memori dengan garbage collection yang membantu menangani dealokasi memori, terutama untuk objek yang tidak lagi digunakan.
+- **Type Annotations (Opsional):** Dart mendukung penambahan tipe data (type annotations) secara opsional, yang memastikan keamanan dan konsistensi dalam mengontrol data dalam aplikasi.
+- **Statically Typed:** Meskipun tipe data bersifat opsional, Dart tetap aman karena menggunakan type-safe dan type inference untuk menganalisis tipe data saat runtime, membantu menemukan bug selama kompilasi.
+- **Portability:** Bahasa Dart tidak hanya digunakan untuk pengembangan web (dapat diterjemahkan ke JavaScript), tetapi juga dapat dikompilasi secara native ke kode Advanced RISC Machines (ARM) dan x86.
 
-3. **Dart dan Flutter Saling Terkait:**
-   - Flutter SDK dan Dart SDK telah dirancang untuk saling mendukung.
-   - Menggunakan Dart dengan baik dapat mengoptimalkan pengembangan aplikasi Flutter.
-
-4. **Penanganan Event dan State:**
-   - Dart memungkinkan penggunaan efektif dalam menangani event, state, dan alur program dalam Flutter.
-   - Ini penting untuk memahami konsep ini sebelum merancang aplikasi Flutter yang kompleks.
-
-5. **Keamanan Kode dan Null Safety:**
-   - Dart mendukung null safety untuk mencegah NullPointerExceptions dan meningkatkan keamanan kode.
-   - Menyadari konsep ini membantu dalam menghindari bug yang umum terkait dengan nilai null.
+Dalam pengembangan framework Flutter, pemahaman mendalam tentang bahasa Dart sangat penting. Semua aspek pengembangan, termasuk kode aplikasi, kode plugin, dan manajemen dependensi, menggunakan bahasa Dart. Memiliki pemahaman dasar yang kuat tentang Dart akan memudahkan produktivitas dalam pengembangan Flutter dan memberikan kenyamanan dalam bekerja dengan Flutter. Oleh karena itu, penting untuk memahami dasar bahasa Dart sebelum memulai dengan Flutter.
