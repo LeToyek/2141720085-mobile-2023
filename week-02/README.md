@@ -41,3 +41,9 @@ Dart adalah bahasa pemrograman yang bertujuan untuk menggabungkan kelebihan-kele
 - **Portability:** Bahasa Dart tidak hanya digunakan untuk pengembangan web (dapat diterjemahkan ke JavaScript), tetapi juga dapat dikompilasi secara native ke kode Advanced RISC Machines (ARM) dan x86.
 
 Dalam pengembangan framework Flutter, pemahaman mendalam tentang bahasa Dart sangat penting. Semua aspek pengembangan, termasuk kode aplikasi, kode plugin, dan manajemen dependensi, menggunakan bahasa Dart. Memiliki pemahaman dasar yang kuat tentang Dart akan memudahkan produktivitas dalam pengembangan Flutter dan memberikan kenyamanan dalam bekerja dengan Flutter. Oleh karena itu, penting untuk memahami dasar bahasa Dart sebelum memulai dengan Flutter.
+
+## Soal 4
+
+https://www.canva.com/design/DAFtcpN9KYY/C2O4GmN01zV6NxRoYV_30Q/view?utm_content=DAFtcpN9KYY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+
+
