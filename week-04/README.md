@@ -240,17 +240,25 @@ Berikut adalah code dan hasil eksekusinya setelah membuat list dengan spread ope
 Untuk memperbaikinya, maka harus mendefinisikan terlebih dahulu variabel promoActive. Berikut adalah code dan hasil eksekusinya
 
 #### Code
+
 **TRUE**
+
 ![Screenshot](./docs/p4_l4_fixed.png)
+
 **FALSE**
+
 ![Screenshot](./docs/p4_l4_fixed_false.png)
 
 
 
 #### Hasil
+
 **TRUE**
+
 ![Screenshot](./docs/p4_l4_fixed_output.png)
+
 **FALSE**
+
 ![Screenshot](./docs/p4_l5_fixed_false_output.png)
 
 
@@ -262,21 +270,283 @@ Untuk memperbaikinya, maka harus mendefinisikan terlebih dahulu variabel promoAc
 Untuk memperbaikinya, maka harus mendefinisikan terlebih dahulu variabel login. Berikut adalah code dan hasil eksekusinya
 
 #### Code
+
 **TRUE**
+
 ![Screenshot](./docs/p4_l5_fixed.png)
+
 **FALSE**
+
 ![Screenshot](./docs/p4_l5_fixed_false.png)
 
 #### Hasil
+
 **TRUE**
+
 ![Screenshot](./docs/p4_l5_fixed_output.png)
+
 **FALSE**
+
 ![Screenshot](./docs/p4_l5_fixed_false_output.png)
 
 6. 
 #### Code
 
 ![Screenshot](./docs/p4_l6.png)
+
+#### Hasil
+
+![Screenshot](./docs/p4_l6_output.png)
+
+## Praktikum 5
+
+1. Ketik atau salin kode program berikut ke dalam fungsi main().
+```dart
+void main() {
+  var record = ('first', a:2,b:true,'last')
+  print(record);
+}
+```
+
+2. Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+
+#### Output
+
+![Screenshot](./docs/p5_l2_output.png)
+
+**Penjelasan**
+
+Kode tersebut dapat berjalan dengan lancar. Hasil dari eksekusi kode tersebut adalah sebuah list yang berisi elemen-elemen yang ditulis pada kode tersebut.
+
+3. Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
+```dart
+(int,int) tukar((int,int) record){
+  var (a,b) = record;
+  return (b,a);
+}
+```
+
+#### Code
+
+![Screenshot](./docs/p5_l3_code.png)
+
+#### Output
+
+![Screenshot](./docs/p5_l3_output.png)
+
+4. Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
+```dart
+(String,int) mahasiswa;
+print(mahasiswa);
+```
+
+#### Output
+
+![Screenshot](./docs/p5_l4_report.png)
+
+**Penjelasan**
+
+Kode tersebut error karena variabel mahasiswa belum didefinisikan. Untuk memperbaikinya, maka harus mendefinisikan terlebih dahulu variabel mahasiswa. Berikut adalah code dan hasil eksekusinya
+
+#### Fixed
+
+![Screenshot](./docs/p5_l4_fixed.png)
+
+#### Output
+
+![Screenshot](./docs/p5_l4_fixed_output.png)
+
+5. Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
+```dart
+var mahasiswa2 = ('first', a: 2, b: true, 'last');
+
+print(mahasiswa2.$1); // Prints 'first'
+print(mahasiswa2.a); // Prints 2
+print(mahasiswa2.b); // Prints true
+print(mahasiswa2.$2); // Prints 'last'
+```
+
+## Tugas Praktikum
+
+1. Jelaskan yang dimaksud functions dalam bahasa dart
+
+    **Jawaban**
+
+    Functions adalah sebuah blok kode yang dapat digunakan kembali. Blok kode tersebut dapat dijalankan dengan cara memanggilnya dari tempat lain dalam program. Sebuah fungsi dapat memiliki parameter yang berarti fungsi tersebut dapat menerima input dari tempat lain dalam program. Sebuah fungsi dapat mengembalikan output.
+
+2. Jelaskan jenis-jenis parameter di Functions beserta contoh sintaksnya!
+
+    **Jawaban**
+
+    1. **Positional Parameters (Parameter Posisi):**
+      Parameter posisi adalah parameter yang nilainya diterima berdasarkan posisinya dalam daftar parameter fungsi. Ini adalah jenis parameter yang paling umum digunakan.
+
+        Contoh:
+        ```dart
+        void greet(String name, int age) {
+          print("Hello, $name! You are $age years old.");
+        }
+        ```
+
+        Panggilan fungsi:
+        ```dart
+        greet("Alice", 30);
+        ```
+
+    2. **Named Parameters (Parameter Bernama):**
+
+      Parameter bernama adalah parameter yang memiliki nama yang ditentukan dan diberi nilai menggunakan sintaks `namaParameter: nilai`. Hal ini memungkinkan Anda untuk mengabaikan urutan parameter saat memanggil fungsi.
+
+      Contoh:
+      ```dart
+      void greet({String name, int age}) {
+        print("Hello, $name! You are $age years old.");
+      }
+      ```
+
+      Panggilan fungsi:
+      ```dart
+      greet(name: "Bob", age: 25);
+      ```
+
+    3. **Default Parameters (Parameter Default):**
+      Parameter default adalah parameter yang memiliki nilai default yang akan digunakan jika parameter tersebut tidak diberikan nilai saat memanggil fungsi.
+
+      Contoh:
+      ```dart
+      void greet(String name, {int age = 30}) {
+        print("Hello, $name! You are $age years old.");
+      }
+      ```
+
+      Panggilan fungsi tanpa memberikan nilai untuk `age`:
+      ```dart
+      greet("Charlie"); // age akan menggunakan nilai default 30
+      ```
+
+    4. **Required Parameters (Parameter Wajib):**
+      Dart 2.12 ke atas memungkinkan Anda untuk menandai parameter sebagai wajib (required). Ini berarti parameter tersebut harus diberikan nilai saat memanggil fungsi.
+
+      Contoh:
+      ```dart
+      void greet(String name, {required int age}) {
+        print("Hello, $name! You are $age years old.");
+      }
+      ```
+
+      Panggilan fungsi dengan parameter wajib:
+      ```dart
+      greet("David", age: 40);
+      ```
+
+      Panggilan fungsi tanpa memberikan nilai untuk `age` akan menyebabkan kesalahan.
+
+3. Jelaskan maksud Functions sebagai first-class objects beserta contoh sintaknya!
+
+    **Jawaban**
+
+    Dart mendukung fungsi sebagai first-class objects, yang berarti fungsi dapat disimpan dalam variabel atau struktur data seperti struktur data lainnya. Anda dapat mengembalikan fungsi dari fungsi lain, dan juga dapat meneruskan fungsi sebagai argumen ke fungsi lain.
+
+    Contoh:
+    ```dart
+    void main() {
+      // Fungsi yang disimpan dalam variabel
+      var sayHello = (String name) => print("Hello, $name!");
+
+      // Fungsi yang menerima fungsi lain sebagai argumen
+      void greet(String name, Function sayHello) {
+        sayHello(name);
+      }
+
+      // Fungsi yang mengembalikan fungsi lain
+      Function talk() {
+        return (String subject) => print("Talking about $subject");
+      }
+
+      // Memanggil fungsi yang disimpan dalam variabel
+      sayHello("Alice");
+
+      // Memanggil fungsi yang menerima fungsi lain sebagai argumen
+      greet("Bob", sayHello);
+
+      // Memanggil fungsi yang mengembalikan fungsi lain
+      var talkAbout = talk();
+      talkAbout("Dart");
+    }
+    ```
+
+4. Apa itu Anonymous Functions? Jelaskan dan berikan contohnya!
+
+    **Jawaban**
+
+    Anonymous functions, juga dikenal sebagai lambda functions atau closures, adalah fungsi tanpa nama yang digunakan untuk mendefinisikan dan menjalankan kode di tempat yang sama. Mereka berguna dalam situasi di mana Anda perlu mengirimkan fungsi sebagai argumen ke fungsi lain atau membuat fungsi sederhana tanpa memberikan nama. Contoh penggunaannya dalam Dart:
+
+    ```dart
+    var greet = () {
+      print("Hello, World!");
+    };
+
+    var add = (int a, int b) => a + b;
+
+    var numbers = [1, 2, 3, 4, 5];
+    numbers.forEach((number) {
+      print("Angka: $number");
+    });
+    ```
+
+5. Jelaskan perbedaan Lexical scope dan Lexical closures! Berikan contohnya!
+
+    **Jawaban**
+
+    **Lexical Scope (Lingkup Leksikal):**
+    Lexical scope mengacu pada cara variabel dan fungsi di dalam sebuah blok kode atau fungsi hanya dapat diakses di dalam blok tersebut atau di dalam fungsi yang mengelilinginya. Ini berarti variabel yang dideklarasikan di dalam suatu fungsi hanya dapat diakses di dalam fungsi tersebut dan tidak dapat diakses dari luar fungsi tersebut.
+
+    Contoh:
+    ```dart
+    void outerFunction() {
+      int x = 10;
+      void innerFunction() {
+        print(x); // Variabel x dapat diakses karena berada dalam lingkup leksikal outerFunction.
+      }
+      innerFunction();
+    }
+
+    outerFunction();
+    ```
+
+    **Lexical Closures (Penutupan Leksikal):**
+    Lexical closures adalah konsep di mana sebuah fungsi yang dideklarasikan di dalam fungsi lain dapat "mengingat" dan mengakses variabel-variabel yang ada dalam lingkup leksikal dari fungsi induknya, bahkan setelah fungsi induk tersebut selesai dieksekusi. Dengan kata lain, fungsi dalam closure dapat mengakses variabel-variabel dari lingkup di mana mereka dibuat.
+
+    Contoh:
+    ```dart
+    Function makeCounter() {
+      int count = 0;
+      return () {
+        count++;
+        print(count);
+      };
+    }
+
+    final counter = makeCounter();
+    counter(); // Output: 1
+    counter(); // Output: 2
+    ```
+
+    Pada contoh di atas, `makeCounter` adalah fungsi yang mengembalikan fungsi lain sebagai hasilnya. Fungsi yang dikembalikan ini adalah closure yang dapat mengakses dan memodifikasi variabel `count` dari lingkup leksikal `makeCounter`. Ini menghasilkan perilaku seperti penjumlahan yang terus menerus.
+
+6. Jelaskan dengan contoh cara membuat return multiple value di Functions!
+
+    **Jawaban**
+
+    Cara untuk membuat return multiple valud di function adalah dengan menggunakan `Record`. Contoh:
+
+    ```dart
+    (String, int) getPerson() {
+      var name = "Alice";
+      var age = 30;
+      return (name, age);
+    }
+    ```
 
 
 
