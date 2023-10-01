@@ -6,17 +6,21 @@ class MyCupertinoButtonLB extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(top: 30),
-      color: Colors.white,
-      child: Column(
-        children: <Widget>[
-          CupertinoButton(
-            child: const Text("Contoh button"),
-            onPressed: () {},
-          ),
-          const CupertinoActivityIndicator(),
-        ],
+    return MaterialApp(
+      home: Container(
+        margin: const EdgeInsets.only(top: 30),
+        color: Colors.white,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            CupertinoButton(
+              child: const Text("Contoh button"),
+              onPressed: () {},
+            ),
+            const CupertinoActivityIndicator(),
+          ],
+        ),
       ),
     );
   }
