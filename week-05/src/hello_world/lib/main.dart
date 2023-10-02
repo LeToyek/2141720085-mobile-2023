@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        useMaterial3: false,
         primarySwatch: Colors.red,
+        // colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.red),
       ),
       home: const MyHomePage(title: 'My Increment App'),
     );
@@ -31,10 +33,11 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  final int _incrementalValue = 1;
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      _counter += _incrementalValue;
     });
   }
 
@@ -49,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Maulana Arif Wijaya',
+              'You have pushed the button this many times:',
             ),
             Text(
               '$_counter',
@@ -58,11 +61,17 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 50.0,
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment Counter',
         child: const Icon(Icons.add),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
