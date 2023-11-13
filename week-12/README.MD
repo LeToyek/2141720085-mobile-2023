@@ -140,3 +140,15 @@ final futures = Future.wait<int>([
 1. Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
 
     ![ScreenShot](./docs/p8l15.png)
+
+### Soal 16
+
+1. Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+
+    Yang terjadi adalah, Halaman `SecondScreen()` kembali menuju `FirstScreen()` dengan warna yang berbeda. Hal ini bisa terjadi karena penggunaan parameter `color` pada `Navigator.pop()` merubah warna dari `FirstScreen()`
+
+2. Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+
+3. Jalankan Aplikasi
+
+    ![GIF](./docs/p8l16.gif)
