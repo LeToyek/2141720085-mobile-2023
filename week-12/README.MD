@@ -113,4 +113,14 @@ final futures = Future.wait<int>([
 
 ## Praktikum 7
 
+### Soal 13
+
+1. Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+
+    Tidak ada perbedaan karena hanya menambahkan `FutureBuilder` pada `body` dari `Scaffold`
+
+2. Jalankan Aplikasi
+
+    ![ScreenShot](./docs/p7l13.png)
+
 
