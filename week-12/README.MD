@@ -77,7 +77,18 @@ final futures = Future.wait<int>([
 ```
 
     Langkah tersebut menunjukan proses asynchronus dengan `FutureGroup`. `FutureGroup` adalah sebuah class yang digunakan untuk mengelompokkan beberapa `Future` menjadi satu `Future` tunggal. `FutureGroup` akan mengembalikan nilai `List` yang berisi hasil dari `Future` yang telah di kelompokkan.
+    
 
+## Praktikum 5
 
+### Soal 9
+
+1. Jalankan Aplikasi
+
+![GIF](./docs/p5l9.gif)
+
+### Soal 10
+
+1. Panggil method `handleError() `tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
 
 
