@@ -58,5 +58,11 @@ Tambahkan nama panggilan Anda pada `title` app sebagai identitas hasil pekerjaan
 
 ![GIF](./docs/p3l6.gif)
 
+## Praktikum 4
 
+### Soal 7
+
+1. Jalankan Aplikasi
+
+![GIF](./docs/p4l7.gif)
 

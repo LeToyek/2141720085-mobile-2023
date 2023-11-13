@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:async/async.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
@@ -59,15 +60,7 @@ class _FuturePageState extends State<FuturePage> {
                 //     setState(() {});
                 //   });
                 // },
-                onPressed: () {
-                  getNumber().then((value) {
-                    setState(() {
-                      result = value.toString();
-                    });
-                  }).catchError((e) {
-                    result = 'An error Occured';
-                  });
-                },
+                onPressed: returnFG,
                 child: const Text("GO!")),
             const Spacer(),
             Text(result),
@@ -128,6 +121,23 @@ class _FuturePageState extends State<FuturePage> {
     total += await returnThreeAsync();
     setState(() {
       result = total.toString();
+    });
+  }
+
+  void returnFG() {
+    FutureGroup<int> futureGroup = FutureGroup<int>();
+    futureGroup.add(returnOneAsync());
+    futureGroup.add(returnTwoAsync());
+    futureGroup.add(returnThreeAsync());
+    futureGroup.close();
+    futureGroup.future.then((value) {
+      int total = 0;
+      for (int i = 0; i < value.length; i++) {
+        total += value[i];
+      }
+      setState(() {
+        result = value.toString();
+      });
     });
   }
 }
