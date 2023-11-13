@@ -109,7 +109,7 @@ final futures = Future.wait<int>([
 
 2. Jalankan Aplikasi
 
-    ![ScreenShot](./docs/p6l12.png)
+    ![ScreenShot](./docs/p6l12.gif)
 
 ## Praktikum 7
 
@@ -121,7 +121,7 @@ final futures = Future.wait<int>([
 
 2. Jalankan Aplikasi
 
-    ![ScreenShot](./docs/p7l13.png)
+    ![ScreenShot](./docs/p7l13.gif)
 
 ### Soal 14
 
@@ -133,4 +133,10 @@ final futures = Future.wait<int>([
 
     ![GIF](./docs/p7l14.gif)
 
+## Praktikum 8
 
+### Soal 15
+
+1. Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+
+    ![ScreenShot](./docs/p8l15.png)
