@@ -48,5 +48,15 @@ Tambahkan nama panggilan Anda pada `title` app sebagai identitas hasil pekerjaan
 
 ![GIF](./docs/p3l5.gif)
 
+### Soal 6
+
+1. Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+
+    Langkah tersebut bertujuan untuk menangkap error yang mungkin ada pada function `getNumber()`
+
+2. Jalankan Aplikasi
+
+![GIF](./docs/p3l6.gif)
+
 
 
