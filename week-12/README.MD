@@ -38,3 +38,15 @@ Tambahkan nama panggilan Anda pada `title` app sebagai identitas hasil pekerjaan
 
 ## Praktikum 3
 
+### Soal 5
+
+1. Jelaskan maksud kode langkah 2 tersebut!
+
+    Kode tersebut bertujuan untuk mengembalikan nilai 42 dengan jeda 5 detik dengan menggunakan completer
+
+2. Jalankan Aplikasi
+
+![GIF](./docs/p3l5.gif)
+
+
+
