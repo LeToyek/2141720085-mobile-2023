@@ -156,15 +156,15 @@ class _FuturePageState extends State<FuturePage> {
     throw Exception('Something terrible happened!');
   }
 
-  // Future handleError() async {
-  //   try {
-  //     await returnError();
-  //   } catch (e) {
-  //     setState(() {
-  //       result = e.toString();
-  //     });
-  //   } finally {
-  //     print('Complete');
-  //   }
-  // }
+  Future handleError() async {
+    try {
+      await returnError();
+    } catch (e) {
+      setState(() {
+        result = e.toString();
+      });
+    } finally {
+      print('Complete');
+    }
+  }
 }

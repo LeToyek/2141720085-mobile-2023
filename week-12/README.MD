@@ -91,4 +91,5 @@ final futures = Future.wait<int>([
 
 1. Panggil method `handleError() `tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
 
+    Perbedaannya adalah dengan `finally` maka terdapat code yang pasti dieksekusi setelah `try catch` tanpa mempedulikan apakah hasil dari `try catch` tersebut error atau tidak.
 
