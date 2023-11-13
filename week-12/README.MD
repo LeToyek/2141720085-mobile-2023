@@ -101,4 +101,16 @@ final futures = Future.wait<int>([
     
     ![ScreenShot](./docs/p1l11.png)
 
-    
+### Soal 12
+
+1. Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+
+    Tidak, karena browser tidak memiliki GPS
+
+2. Jalankan Aplikasi
+
+    ![ScreenShot](./docs/p6l12.png)
+
+## Praktikum 7
+
+
