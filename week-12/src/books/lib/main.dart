@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
@@ -32,6 +34,8 @@ class FuturePage extends StatefulWidget {
 }
 
 class _FuturePageState extends State<FuturePage> {
+  late Completer completer;
+
   String result = '';
   @override
   Widget build(BuildContext context) {
@@ -55,7 +59,15 @@ class _FuturePageState extends State<FuturePage> {
                 //     setState(() {});
                 //   });
                 // },
-                onPressed: count,
+                onPressed: () {
+                  getNumber().then((value) {
+                    setState(() {
+                      result = value.toString();
+                    });
+                  }).catchError((e) {
+                    result = 'An error Occured';
+                  });
+                },
                 child: const Text("GO!")),
             const Spacer(),
             Text(result),
@@ -67,6 +79,25 @@ class _FuturePageState extends State<FuturePage> {
       ),
     );
   }
+
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate();
+    return completer.future;
+  }
+
+  Future calculate() async {
+    await Future.delayed(const Duration(seconds: 5));
+    completer.complete(42);
+  }
+  // calculate() async {
+  //   try {
+  //     await Future.delayed(const Duration(seconds: 5));
+  //     completer.complete(42);
+  //   } catch (e) {
+  //     completer.completeError({});
+  //   }
+  // }
 
   Future<Response> getData() async {
     const authority = "www.googleapis.com";
