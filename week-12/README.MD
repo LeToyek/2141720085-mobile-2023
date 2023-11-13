@@ -93,3 +93,12 @@ final futures = Future.wait<int>([
 
     Perbedaannya adalah dengan `finally` maka terdapat code yang pasti dieksekusi setelah `try catch` tanpa mempedulikan apakah hasil dari `try catch` tersebut error atau tidak.
 
+## Praktikum 6
+
+### Soal 11
+
+1. Jalankan Aplikasi
+    
+    ![ScreenShot](./docs/p1l11.png)
+
+    
