@@ -66,3 +66,18 @@ Tambahkan nama panggilan Anda pada `title` app sebagai identitas hasil pekerjaan
 
 ![GIF](./docs/p4l7.gif)
 
+### Soal 8
+
+```dart
+final futures = Future.wait<int>([
+  returnOneAsync(),
+  returnTwoAsync(),
+  returnThreeAsync(),
+]);
+```
+
+    Langkah tersebut menunjukan proses asynchronus dengan `FutureGroup`. `FutureGroup` adalah sebuah class yang digunakan untuk mengelompokkan beberapa `Future` menjadi satu `Future` tunggal. `FutureGroup` akan mengembalikan nilai `List` yang berisi hasil dari `Future` yang telah di kelompokkan.
+
+
+
+
