@@ -37,5 +37,15 @@
 
     Keduanya sama-sama digunakan untuk mendapatkan data dari stream, namun `await for` digunakan untuk mendapatkan semua data dari stream, sedangkan `listen` digunakan untuk mendapatkan data dari stream secara berulang.
 
+### Soal 6
 
+1. Jelaskan maksud kode langkah 8 dan 10 tersebut!
+
+    kode langkah 8 digunakan untuk mendapatkan data dari stream `NumberStream()` dengan menggunakan controller.
+
+    kode langkah 10 digunakan untuk memberi nilai pada stream dengan menggunakan nilai acak dibawah 10.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README
+
+    ![ScreenShot](./docs/s5.gif)
 
