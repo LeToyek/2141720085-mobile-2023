@@ -70,3 +70,18 @@
 2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
   
       ![ScreenShot](./docs/s8.gif)
+
+### Soal 9
+
+1. Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+
+    - Langkah 2 digunakan untuk mengisi nilai pada subscription sehingga dapat memperoleh stream dari `NumberStream()`.
+
+    - Langkah 6 digunakan untuk menghentikan subscription sehingga tidak memperoleh stream dari `NumberStream()`.
+
+    - Langkah 8 digunakan untuk melakukan pemeriksaan error `error handling` sehingga akan melakukan print -1 ketika stream terlah ditutup.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    ![ScreenShot](./docs/s9.gif)
+
