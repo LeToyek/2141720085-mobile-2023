@@ -61,3 +61,12 @@
 
     ![ScreenShot](./docs/s7.gif)
 
+### Soal 8
+
+1. Jelaskan maksud kode langkah 1-3 tersebut!
+
+    langkah - langkah tersebut merupakan langkah untuk membuat stream dengan menggunakan `transform` serta memberikan handling pada setiap kondisi yang terjadi pada stream.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+  
+      ![ScreenShot](./docs/s8.gif)
