@@ -25,5 +25,11 @@
     Maksud dari kode tersebut adalah untuk mengembalikan nilai dari fungsi generator yang dipanggil.
     ![ScreenShot](./docs/s3.png)
 
+### Soal 4
+
+1. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    ![ScreenShot](./docs/s4.gif)
+
 
 
