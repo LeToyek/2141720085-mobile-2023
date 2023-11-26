@@ -31,5 +31,11 @@
 
     ![ScreenShot](./docs/s4.gif)
 
+### Soal 5
+
+1. Jelaskan perbedaan menggunakan `listen` dan `await for` (langkah 9) !
+
+    Keduanya sama-sama digunakan untuk mendapatkan data dari stream, namun `await for` digunakan untuk mendapatkan semua data dari stream, sedangkan `listen` digunakan untuk mendapatkan data dari stream secara berulang.
+
 
 
