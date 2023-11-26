@@ -100,3 +100,18 @@
 2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
     ![ScreenShot](./docs/s11.gif)
+
+### Soal 12
+
+1. Jelaskan maksud kode pada langkah 3 dan 7 !
+
+    - Langkah 3 digunakan untuk menghasilkan nilai random kurang dari 10 dalam stream dengan delay 1 detik setiap nilai yang dihasilkan.
+
+    - Langkah 7 digunakan untuk menggunakan stream yang telah diinisialisasi sehingga dapat digunakan untuk mendapatkan nilai dari stream tersebut.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    ![ScreenShot](./docs/s12.gif)
+
+### Soal 13
+
