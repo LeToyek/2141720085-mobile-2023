@@ -49,3 +49,15 @@
 
     ![ScreenShot](./docs/s5.gif)
 
+### Soal 7
+
+1. Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+
+    - Langkah 13 digunakan untuk menambahkan error pada stream yang bertujuan untuk melakukan penanganan error pada stream.
+
+    - Langkah 15 digunakan untuk mengaktifkan error pada stream.
+
+2. Kembalikan kode seperti semula pada Langkah 15, comment `addError()` agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
+
+    ![ScreenShot](./docs/s7.gif)
+
