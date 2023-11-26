@@ -45,6 +45,9 @@ class _StreamHomePageState extends State<StreamHomePage> {
 
   late StreamSubscription subscription;
 
+  late StreamSubscription subscription2;
+  String values = '';
+
   void changeColor() async {
     colorStream.getColors().listen((eventColor) {
       setState(() {
@@ -58,20 +61,19 @@ class _StreamHomePageState extends State<StreamHomePage> {
     // TODO: implement initState
     numberStream = NumberStream();
     numberStreamController = numberStream.controller;
-    Stream stream = numberStreamController.stream;
+    Stream stream = numberStreamController.stream.asBroadcastStream();
     subscription = stream.listen((event) {
       setState(() {
-        lastNumber = event;
+        values += "$event - ";
       });
     });
-    subscription.onError((error) {
+
+    subscription2 = stream.listen((event) {
       setState(() {
-        lastNumber = -1;
+        values += "$event - ";
       });
     });
-    subscription.onDone(() {
-      print("OnDone was called");
-    });
+
     super.initState();
   }
 
@@ -112,6 +114,7 @@ class _StreamHomePageState extends State<StreamHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              Text(values),
               Text(lastNumber.toString()),
               ElevatedButton(
                 onPressed: () {

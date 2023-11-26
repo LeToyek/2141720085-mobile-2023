@@ -85,3 +85,18 @@
 
     ![ScreenShot](./docs/s9.gif)
 
+### Soal 10
+
+1. Jelaskan mengapa error itu bisa terjadi ?
+
+    karena pada kode tersebut melakukan listen sebanyak 2 kali di stream yang sama sehingga terjadi error.
+
+### Soal 11
+
+1. Jelaskan mengapa hal itu bisa terjadi ?
+
+    Ketika stream diubah dengan memanggil function `asBroadcastStream()` maka stream akan menjadi broadcast sehingga dapat di listen lebih dari 1 kali.
+
+2. Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    ![ScreenShot](./docs/s11.gif)
